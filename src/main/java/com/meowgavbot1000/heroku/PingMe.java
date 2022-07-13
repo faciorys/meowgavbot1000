@@ -15,7 +15,7 @@ public class PingMe {
     @SneakyThrows
     public void ping() {
         try {
-            URL url = new URL("https://meowgavbot.herokuapp.com/");
+            URL url = new URL("https://meowgavbot2.herokuapp.com/");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.connect();
             log.info("Server is working...  Ping {} status: {}", url.getHost(), connection.getResponseCode());
